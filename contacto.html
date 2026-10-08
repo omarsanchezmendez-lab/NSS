@@ -1,0 +1,170 @@
+<!-- contacto.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Network Support Systems</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container"><a href="index.html" class="logo" style="display: flex; align-items: center; gap: 0.75rem;">
+                <img src="logo1.png" alt="Logo de Network Support Systems" style="width: 100px;">
+                <span style="color:var(--primary-color)">Network Support Systems</span>
+            </a>
+            <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Layout -->
+    <section class="section container">
+        <div class="section-title">
+            <h2 style="color: var(--white);">Hablemos de tu Infraestructura</h2>
+            <p>Estamos listos para evaluar tus redes y servidores. Completa el formulario o contáctanos por nuestros canales directos.</p>
+        </div>
+        
+        <div class="grid-2">
+            <!-- Info de Contacto -->
+            <div>
+                <div class="card" style="margin-bottom: 2rem;">
+                    <h3><i class="fab fa-whatsapp" style="color:#25D366;"></i> WhatsApp / Teléfono</h3>
+                    <p style="margin-top: 0.5rem; color: var(--text-muted);">Soporte de emergencias e informes.</p>
+                    <p style="font-size: 1.25rem; font-weight: 600; margin-top: 0.5rem;">+52 477 638 82 29</p>
+                </div>
+                <div class="card" style="margin-bottom: 2rem;">
+                    <h3><i class="fas fa-envelope" style="color:var(--secondary-color);"></i> Correo Electrónico</h3>
+                    <p style="margin-top: 0.5rem; color: var(--text-muted);">Para cotizaciones y auditorías formales.</p>
+                    <p style="font-size: 1.1rem; font-weight: 600; margin-top: 0.5rem;">contacto@networksupport.com.mx</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-clock" style="color:var(--secondary-color);"></i> Horario de Atención</h3>
+                    <p style="margin-top: 0.5rem; color: var(--text-muted);">Lunes a Viernes: 9:00 AM - 6:00 PM<br>Soporte con Contrato SLA: 24/7/365</p>
+                </div>
+            </div>
+
+            <!-- Formulario -->
+            <div class="card">
+                <h3 style="margin-bottom: 1.5rem;">Solicita un Diagnóstico</h3>
+                <form id="contact-form" action="https://formspree.io/f/xkjojvny" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo *</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" required placeholder="Ej. Juan Pérez">
+                    </div>
+                    <div class="form-group">
+                        <label for="empresa">Empresa</label>
+                        <input type="text" id="empresa" name="empresa" class="form-control" placeholder="Nombre de tu organización">
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico Corporativo *</label>
+                        <input type="email" id="correo" name="_replyto" class="form-control" required placeholder="juan@tuempresa.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="servicio">Servicio de Interés</label>
+                        <select id="servicio" name="servicio" class="form-control">
+                            <option value="Auditoria TI General">Auditoría TI General</option>
+                            <option value="Cableado y Redes">Cableado y Redes</option>
+                            <option value="Servidores y Nube">Servidores y Nube</option>
+                            <option value="Ciberseguridad (Firewalls)">Ciberseguridad (Firewalls)</option>
+                            <option value="Mesa de Ayuda / Soporte">Mesa de Ayuda / Soporte</option>
+                            <option value="Administración de Bases de Datos (DBA)">Administración de Bases de Datos (DBA)</option>
+                            <option value="Análisis y Corrección de Performance (Tuning de Sistemas)">Análisis y Corrección de Performance (Tuning de Sistemas)</option>
+                            <option value="Respaldo y Recuperación de Datos (Disaster Recovery)">Respaldo y Recuperación de Datos (Disaster Recovery)</option>
+                            <option value="Analítica de Datos, IA y Business Intelligence">Analítica de Datos, IA y Business Intelligence</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Detalles de tu requerimiento</label>
+                        <textarea id="mensaje" name="mensaje" class="form-control" placeholder="Descríbenos brevemente el estado de tu red o la solución que buscas..."></textarea>
+                    </div>
+                    <p id="contact-status" role="status" aria-live="polite"></p>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Solicitud</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" style="background-color: var(--white);">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color:var(--white)">Preguntas Frecuentes</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">¿Tienen cobertura fuera de la Ciudad de México? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Sí, ofrecemos consultoría y monitoreo remoto a nivel nacional. Para instalaciones físicas y cableado estructurado, operamos principalmente en la zona centro del país, pero podemos evaluar proyectos foráneos según su volumen.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿Qué incluye el diagnóstico de red gratuito? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Incluye una entrevista con uno de nuestros ingenieros, un escaneo preliminar de vulnerabilidades perimetrales (si se autoriza) y la entrega de un reporte de hallazgos básicos junto con nuestras recomendaciones de arquitectura.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿Ofrecen soporte 24/7? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Sí, nuestros contratos de Mantenimiento y Soporte (SLA) incluyen opciones de cobertura 24/7/365 para infraestructura crítica y servidores que no pueden tener tiempos de inactividad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Network Support Systems</h4>
+                    <p>Consultoría e Ingeniería en Tecnologías de la Información.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="servicios.html#redes">Redes Corporativas</a></li>
+                        <li><a href="servicios.html#servidores">Gestión de Servidores</a></li>
+                        <li><a href="servicios.html#helpdesk">Soporte Técnico</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contacto@networksupport.com.mx</li>
+                        <li><i class="fas fa-phone"></i> +52 477 638 82 29</li>
+                        <li><i class="fas fa-map-marker-alt"></i> León, Guanajuato, México</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Network Support Systems. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

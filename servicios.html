@@ -1,0 +1,231 @@
+<!-- servicios.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios TI | Network Support Systems</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 0.75rem;">
+                <img src="logo1.png" alt="Logo de Network Support Systems" style="width: 100px;">
+                <span style="color:var(--primary-color)">Network Support Systems</span>
+            </a>
+            <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html" class="btn btn-primary" style="color:white;">Diagnóstico Gratuito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 4rem 0; text-align: center; ">
+        <div class="container">
+            <h1>Catálogo de Servicios y Soluciones</h1>
+            <p>Arquitectura tecnológica integral para empresas que exigen máximo rendimiento.</p>
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
+                 style="display: block; max-width: 50%; width: 720px; margin: 2rem auto 0; border-radius: 18px; box-shadow: 0 18px 40px rgba(12, 18, 38, 0.18);">
+        </div>
+    </section>
+
+    <!-- Servicios Detail Grid -->
+    <section class="section container">
+        <div class="grid-2">
+            
+            <article class="card" id="redes">
+                <i class="fas fa-network-wired card-icon"></i>
+                <h3>Redes y Cableado Estructurado</h3>
+                <p>Proyectamos e instalamos infraestructura de red robusta (Cobre y Fibra Óptica) apegada a estándares internacionales. Aseguramos la conectividad integral de tu empresa sin pérdida de paquetes.</p>
+                <ul style="margin-top: 1rem; color: var(--text-muted); list-style: disc; padding-left: 1.5rem;">
+                    <li>Certificación de nodos y enlaces.</li>
+                    <li>Implementación de Redes Inalámbricas (WiFi Empresarial de alta densidad).</li>
+                    <li>Mantenimiento preventivo a racks y peinado de cableado.</li>
+                </ul>
+            </article>
+
+            <article class="card" id="servidores">
+                <i class="fas fa-server card-icon"></i>
+                <h3>Administración de Servidores y Cloud</h3>
+                <p>Infraestructura robusta, ágil y preparada para escalar al ritmo de sus metas.
+                  Gestionar la infraestructura de servidores no debería ser una carga para su equipo de TI. Nos encargamos de la configuración, aseguramiento, actualización y gestión integral de sus entornos, garantizando una arquitectura ágil, segura y de alto rendimiento.  </p>
+                <ul style="margin-top: 1rem; color: var(--text-muted); list-style: disc; padding-left: 1.5rem;">
+                    <li>Sistemas Operativos: Dominio completo en entornos empresariales Linux (RedHat, Ubuntu, CentOS) y Windows Server.</li>
+                    <li>Servicios en la Nube e Híbridos: Gestión eficiente en AWS, Microsoft Azure y Google Cloud Platform, optimizando costos y rendimiento.</li>
+                    <li>Seguridad y Cumplimiento: Hardening de servidores, gestión de parches de seguridad y blindaje contra amenazas cibernéticas.</li>
+                    <li>Tranquilidad operativa: Deje la complejidad técnica de sus servidores en manos de expertos y concentre el talento de su organización en hacer crecer su negocio.</li>
+                </ul>
+            </article>
+
+            <article class="card" id="seguridad">
+                <i class="fas fa-shield-alt card-icon"></i>
+                <h3>Ciberseguridad y Firewalls (Perimetral)</h3>
+                <p>Defensa activa contra amenazas digitales. Blindamos tu perímetro de red para asegurar la confidencialidad e integridad de la información sensible de tu negocio.</p>
+                <ul style="margin-top: 1rem; color: var(--text-muted); list-style: disc; padding-left: 1.5rem;">
+                    <li>Configuración de equipos UTM (Fortinet, Cisco ASA).</li>
+                    <li>Implementación de VPNs seguras para teletrabajo.</li>
+                    <li>Políticas estrictas de Backup Automatizado (Plan de Recuperación de Desastres).</li>
+                </ul>
+            </article>
+
+            <article class="card" id="helpdesk">
+                <i class="fas fa-headset card-icon"></i>
+                <h3>Soporte Técnico y Help Desk (Mesa de Ayuda)</h3>
+                <p>Tu departamento de TI externalizado. Resolvemos incidencias de usuarios finales de forma remota y presencial, respaldados por Acuerdos de Nivel de Servicio (SLA) rigurosos.</p>
+                <ul style="margin-top: 1rem; color: var(--text-muted); list-style: disc; padding-left: 1.5rem;">
+                    <li>Asistencia técnica niveles 1, 2 y 3.</li>
+                    <li>Monitoreo de equipos endpoint (Antivirus, parches).</li>
+                    <li>Mantenimiento a hardware y software de estaciones de trabajo.</li>
+                </ul>
+            </article>
+            
+            <article class="card" id="consultoria">
+                <i class="fas fa-chart-line card-icon"></i>
+                <h3>Consultoría y Auditoría TI</h3>
+                <p>Evaluamos el estado actual de tu infraestructura tecnológica y creamos un roadmap de modernización alineado a tus objetivos de negocio y presupuesto.</p>
+                <ul style="margin-top: 1rem; color: var(--text-muted); list-style: disc; padding-left: 1.5rem;">
+                    <li>Levantamiento de inventario y diagramación de red.</li>
+                    <li>Auditorías de vulnerabilidad.</li>
+                    <li>Asesoría en licenciamiento y cumplimiento normativo.</li>
+                </ul>
+            </article>
+
+            <article class="card" >
+                <i class="fa fa-database fa-2x"  style="padding: 1rem; color: #3498db;" aria-hidden="true" ></i>
+                <h3>Administración de Bases de Datos (DBA)</h3>
+                <p>Potencia, integridad y disponibilidad total para el activo más valioso de su empresa: sus datos.
+                    En un entorno empresarial hiperconectado, una base de datos lenta o inestable frena el crecimiento de su negocio. Brindamos servicios avanzados de administración, mantenimiento preventivo y optimización continua de bases de datos para garantizar que su información esté siempre segura, disponible y lista para responder a las exigencias operativas.
+                </p>
+                <ul style="margin-top: 1rem; color: var(--text-muted); list-style: disc; padding-left: 1.5rem;">
+                    <li>Soporte multitecnología: Especialistas certificados en Oracle, Microsoft SQL Server y PostgreSQL.</li>
+                    <li>Operación continua: Monitoreo 24/7 para prevenir caídas y corregir anomalías antes de que afecten a sus usuarios.</li>
+                    <li>¿Por qué elegirnos? Nos aseguramos de que sus datos no solo estén guardados, sino optimizados para respaldar la toma de decisiones estratégicas en tiempo real.</li>
+                </ul>
+            </article>
+
+            <article class="card" >
+                <i class="fa fa-sitemap fa-2x"  style="padding: 1rem; color: #3498db;" aria-hidden="true" ></i>
+                <h3>Análisis y Corrección de Performance (Tuning de Sistemas)</h3>
+                <p>Acelere al máximo el rendimiento de sus servidores, bases de datos y aplicaciones.
+                ¿Sus sistemas tardan en procesar operaciones críticas? ¿Sus usuarios experimentan lentitud en horas pico? Identificamos y eliminamos de raíz los cuellos de botella que sofocan el rendimiento de su infraestructura tecnológica, incluyendo entornos ERP de terceros (SAP, Oracle E-Business Suite, Microsoft Dynamics, entre otros).
+                </p>
+                <ul style="margin-top: 1rem; color: var(--text-muted); list-style: disc; padding-left: 1.5rem;">
+                    <li>Diagnóstico Profundo: Análisis exhaustivo de consultas SQL, consumo de memoria, I/O de disco, CPU y latencia de red.</li>
+                    <li>Optimización de ERPs de terceros (rl. SAP) o propios (Elaborados por la empresa): Ajuste preciso de aplicaciones empresariales para agilizar procesos operativos clave (facturación, inventarios, cierres contables, nómina).</li>
+                    <li>Resultados medibles: Reducimos tiempos de respuesta, maximizamos la capacidad de sus componentes actuales y evitamos gastos innecesarios en hardware.</li>
+                </ul>
+            </article>
+
+            <article class="card" >
+                <i class="fa fa-exclamation-triangle fa-2x"  style="padding: 1rem; color: #3498db;" aria-hidden="true" ></i>
+                <h3>Respaldo y Recuperación de Datos (Disaster Recovery)</h3>
+                <p>Continuidad de negocio garantizada: Proteja a su empresa contra cualquier contingencia.
+                    La pérdida de datos o un secuestro de información (Ransomware) puede paralizar su empresa en minutos. Diseñamos e implementamos estrategias integrales de Backup & Disaster Recovery orientadas a garantizar la rápida recuperación de sus operaciones bajo cualquier escenario de crisis.
+                </p>
+                <ul style="margin-top: 1rem; color: var(--text-muted); list-style: disc; padding-left: 1.5rem;">
+                    <li>Estrategias Multicapa: Respaldos automatizados en la nube, entornos locales e híbridos con cifrado de alto nivel.</li>
+                    <li>Planes de Recuperación Ante Desastres (DRP): Diseñados a la medida de su negocio, asegurando mínimos Tiempos de Recuperación (RTO) y Punto de Recuperación (RPO).</li>
+                    <li>Pruebas de Recuperación Real: Simulaciones periódicas para verificar que sus respaldos sean 100% funcionales cuando más los necesite.</li>
+                    <li>Su negocio nunca se detiene: Protegemos su información crítica para que opere con la confianza de estar respaldado por expertos.</li>
+                </ul>
+            </article>
+
+            <article class="card" >
+                <i class="fa fa-desktop fa-2x"  style="padding: 1rem; color: #3498db;" aria-hidden="true" ></i>
+                <h3>Analítica de Datos, IA y Business Intelligence</h3>
+                <p>Convierta sus datos en ventajas competitivas con Microsoft Fabric, Power BI e Inteligencia Artificial.
+                    Modernice la forma en que interactúa con su información. Conectamos su infraestructura tecnológica tradicional (Linux, Windows, Oracle, SQL Server, Postgres) con las plataformas de análisis y visualización más avanzadas del mercado.
+                </p>
+                <ul style="margin-top: 1rem; color: var(--text-muted); list-style: disc; padding-left: 1.5rem;">
+                    <li>Microsoft Fabric: Unificamos sus datos dispersos en una arquitectura analítica moderna, fluida y escalable.</li>
+                    <li>Power BI Empresarial: Diseñamos tableros ejecutivos e interactivos para decisiones basadas en datos en tiempo real.</li>
+                    <li>Agentes e IA Aplicada: Integramos modelos de Inteligencia Artificial para análisis predictivo, automatización de consultas analíticas y extracción de hallazgos clave de manera instantánea.</li>
+                    <li>De datos crudos a decisiones rentables: Le ayudamos a descubrir oportunidades ocultas, predecir tendencias y superar a la competencia.</li>
+                </ul>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Metodología -->
+    <section class="section" style="background-color: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: var(--white);">Nuestra Metodología de Trabajo</h2>
+                <p>Un proceso estructurado de 4 pasos para garantizar integraciones tecnológicas impecables.</p>
+            </div>
+            <div class="grid-3" style="text-align: center;">
+                <div>
+                    <div style="font-size: 2rem; color: var(--accent-color); font-weight: 800;">1</div>
+                    <h4 style="margin: 1rem 0;">Auditoría Inicial</h4>
+                    <p class="text-muted">Diagnosticamos cuellos de botella y vulnerabilidades en tu entorno actual.</p>
+                </div>
+                <div>
+                    <div style="font-size: 2rem; color: var(--accent-color); font-weight: 800;">2</div>
+                    <h4 style="margin: 1rem 0;">Diseño a Medida</h4>
+                    <p class="text-muted">Proyectamos la topología, hardware y configuraciones necesarias.</p>
+                </div>
+                <div>
+                    <div style="font-size: 2rem; color: var(--accent-color); font-weight: 800;">3</div>
+                    <h4 style="margin: 1rem 0;">Despliegue y Pruebas</h4>
+                    <p class="text-muted">Implementación técnica en horarios de bajo impacto operativo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Network Support Systems</h4>
+                    <p>Consultoría e Ingeniería en Tecnologías de la Información.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="servicios.html#redes">Redes Corporativas</a></li>
+                        <li><a href="servicios.html#servidores">Gestión de Servidores</a></li>
+                        <li><a href="servicios.html#helpdesk">Soporte Técnico</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contacto@networksupport.com.mx</li>
+                        <li><i class="fas fa-phone"></i> +52 477 638 82 29</li>
+                        <li><i class="fas fa-map-marker-alt"></i> León, Guanajuato, México</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Network Support Systems. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
